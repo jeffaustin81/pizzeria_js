@@ -9,7 +9,50 @@
     </head>
     <body>
         <div class="container">
+            <h1>Order a Pizza!</h1>
 
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="pizza-order">
+                        <div class="form-group">
+                            <label for="pizza-size">Size</label>
+                            <select name="pizza-size" id="pizza-size" class="form-control">
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="toppings">Choose Toppings</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="pizza-quantity">Quantity</label>
+                            <select name="pizza-quantity" id="pizza-quantity" class="form-control">
+                                <option value = "1">1</option>
+                                <option value = "2">2</option>
+                                <option value = "3">3</option>
+                                <option value = "4">4</option>
+                                <option value = "5">5</option>
+                                <option value = "6">6</option>
+                                <option value = "7">7</option>
+                                <option value = "8">8</option>
+                                <option value = "9">9</option>
+                                <option value = "10">10</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit Order</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div id="show-order">
+                        <h2>Your Pizza Order</h2>
+                        <p>Size: <span class="size"></span></p>
+                        <p>Toppings: <span class="toppings"></span></p>
+                        <p>Quantity: <span class="quantity"></span></p>
+                        <p>Price: $<span class="price"></span></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
