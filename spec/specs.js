@@ -16,10 +16,10 @@ describe('Pizza', function() {
         expect(testPizza.pizzaPrice()).to.equal(38);
     });
 
-    // it("adjusts the pizza price based on quantity", function() {
-    //     var testPizza = new Pizza("Small", 3, 4);
-    //     expect(testPizza.pizzaPrice()).to.equal();
-    // });
+    it("adjusts the pizza price based on quantity", function() {
+        var testPizza = new Pizza("Small", 3, 4);
+        expect(testPizza.pizzaPrice()).to.equal(52);
+    });
     //
     // it("adjusts the pizza price based on toppings", function() {
     //     var testPizza = new Pizza("Small", 5, 2);
