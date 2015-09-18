@@ -10,4 +10,29 @@ describe('Pizza', function() {
         var testPizza = new Pizza("Large", 3, 1);
         expect(testPizza.pizzaPrice()).to.equal(17);
     });
+
+    it("adjusts the pizza price based on pizza size", function() {
+        var testPizza = new Pizza("Medium", 5, 2);
+        expect(testPizza.pizzaPrice()).to.equal(38);
+    });
+
+    // it("adjusts the pizza price based on quantity", function() {
+    //     var testPizza = new Pizza("Small", 3, 4);
+    //     expect(testPizza.pizzaPrice()).to.equal();
+    // });
+    //
+    // it("adjusts the pizza price based on toppings", function() {
+    //     var testPizza = new Pizza("Small", 5, 2);
+    //     expect(testPizza.pizzaPrice()).to.equal();
+    // });
+    //
+    // it("adjusts the pizza price based on multiple factors", function() {
+    //     var testPizza = new Pizza("Small", 3, 2);
+    //     expect(testPizza.pizzaPrice()).to.equal();
+    // });
+    //
+    // it("adjusts the pizza price based on multiple factors", function() {
+    //     var testPizza = new Pizza("Small", 3, 2);
+    //     expect(testPizza.pizzaPrice()).to.equal();
+    // });
 });
