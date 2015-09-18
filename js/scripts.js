@@ -30,6 +30,9 @@ $(document).ready(function() {
         event.preventDefault();
 
         var toppings = $("input#toppings:checked").map(function() {return this.value;}).get().join(', ');
+        if(toppings === "") {
+            toppings = "None";
+        }
         var pizzaSize = $("select#pizza-size").val();
         var pizzaToppings = $("input#toppings:checked").length;
         var pizzaQuantity = parseInt($("select#pizza-quantity").val());
