@@ -35,4 +35,5 @@ describe('Pizza', function() {
         var testPizza = new Pizza("Large", 5, 5);
         expect(testPizza.pizzaPrice()).to.equal(105);
     });
+    //  I would test for invalid inputs for size, however I plan to use a drop down menu that will only pass in valid entries for size
 });
