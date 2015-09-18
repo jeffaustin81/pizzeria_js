@@ -24,3 +24,15 @@ Pizza.prototype.pizzaPrice = function() {
 
     return total;
 };
+
+$(document).ready(function() {
+    $("form#pizza-order").submit(function(event) {
+        event.preventDefault();
+
+        var pizzaSize = $("select#pizza-size").val();
+        var pizzaToppings = parseInt($(stuff).val());
+        var pizzaQuantity = parseInt($("select#pizza-quantity").val());
+
+        var newPizza = new Pizza(pizzaSize, pizzaToppings, pizzaQuantity);
+    });
+});
