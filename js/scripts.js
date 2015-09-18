@@ -2,7 +2,7 @@ function Pizza(pizzaSize, pizzaToppings, pizzaQuantity) {
     this.pizzaSize = pizzaSize;
     this.pizzaToppings = pizzaToppings;
     this.pizzaQuantity = pizzaQuantity;
-};
+}
 
 Pizza.prototype.pizzaPrice = function() {
     var subtotal = 0;
@@ -29,8 +29,10 @@ $(document).ready(function() {
     $("form#pizza-order").submit(function(event) {
         event.preventDefault();
 
-        var toppings = $("input#toppings:checked").map(function() {return this.value;}).get().join(', ');
-        if(toppings === "") {
+        var toppings = $("input#toppings:checked").map(function() {
+            return this.value;
+        }).get().join(', ');
+        if (toppings === "") {
             toppings = "None";
         }
         var pizzaSize = $("select#pizza-size").val();
