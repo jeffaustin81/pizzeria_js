@@ -1,3 +1,17 @@
 #show-order {
     display: none;
+    background-image: url(../images/paper_img.jpg);
+    color: #000;
+    font-family: cursive;
+}
+body {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background-image: url("../images/pizza_img.jpg");
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
