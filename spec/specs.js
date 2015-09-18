@@ -30,9 +30,9 @@ describe('Pizza', function() {
         var testPizza = new Pizza("Medium", 10, 10);
         expect(testPizza.pizzaPrice()).to.equal(290);
     });
-    //
-    // it("adjusts the pizza price based on multiple factors", function() {
-    //     var testPizza = new Pizza("Small", 3, 2);
-    //     expect(testPizza.pizzaPrice()).to.equal();
-    // });
+
+    it("adjusts the pizza price based on multiple factors", function() {
+        var testPizza = new Pizza("Large", 5, 5);
+        expect(testPizza.pizzaPrice()).to.equal(105);
+    });
 });
